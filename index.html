@@ -6,55 +6,54 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
-    
 </head>
-<body onload="carregamento()">
-    <header> <h1> limite de velocidade</h1></header>
+<body onload="loading()">
+    <header>
+        <h1> limite de velocidade</h1>
+    </header>
     
     <section >
-        <div class="dta">
+        <div class="dateField">
             vai aparecer a hora
-
         </div>
 
-        <div class="mensagem">
+        <div class="message">
             vai aparecer uma imagem
         </div>
-        <p>
-         Digite sua velocidade
-        <input type="number" name="vel" class="txtv">
-        <input type="button" value="verificar" onclick="calcular()">
-        </p>
-        <div class="res">
+
+        <div>
+            <label for="speed">Digite sua velocidade</label>
+            <input type="number" name="speed" id="speed" class="speed">
+            <button type="button" onclick="calculate()">verificar</button>
+        </div>
+
+        <div class="response">
             <p>Cuidado com a sua velocidade</p>
         </div>
         
+        <div>
+            <label for="nameField">Nome Completo</label>
+            <input type="text" id="nameField" name="nameField">
+        </div>
 
         <div>
-            <p>Nome Completo
-                <input type="text" name="txt">
-            </p>
-            <p>Ano de Nascimento
-            <input type="text" name="txt2" class="txt2">
-            </p>
-            <p>
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="Masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="verificar" onclick="procurar()">
-            </p>
-
-        </div>
-        <div class="ida">
-            <p>Preencha os dados acima para ver o resultado!!!</p>
-
+            <label for="ageField">Ano de Nascimento</label>
+            <input type="text" id="ageField" name="ageField" class="ageField">
         </div>
         
-    </section>
+        <div>
+            <input type="radio" name="radioSex" id="male" checked>
+            <label for="male">Masculino</label>
+            <input type="radio" name="radioSex" id="female">
+            <label for="female">Feminino</label>
+        </div>
 
+        <button type="button" onclick="search()">Verificar</button>
+
+        <div class="ida">
+            <p>Preencha os dados acima para ver o resultado!!!</p>
+        </div>
+    </section>
     
     <script src='javascript.js'></script>
 </body>
