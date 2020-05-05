@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    
+</head>
+<body onload="carregamento()">
+    <header> <h1> limite de velocidade</h1></header>
+    
+    <section >
+        <div class="dta">
+            vai aparecer a hora
+
+        </div>
+
+        <div class="mensagem">
+            vai aparecer uma imagem
+        </div>
+        <p>
+         Digite sua velocidade
+        <input type="number" name="vel" class="txtv">
+        <input type="button" value="verificar" onclick="calcular()">
+        </p>
+        <div class="res">
+            <p>Cuidado com a sua velocidade</p>
+        </div>
+        
+
+        <div>
+            <p>Nome Completo
+                <input type="text" name="txt">
+            </p>
+            <p>Ano de Nascimento
+            <input type="text" name="txt2" class="txt2">
+            </p>
+            <p>
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="Masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="procurar()">
+            </p>
+
+        </div>
+        <div class="ida">
+            <p>Preencha os dados acima para ver o resultado!!!</p>
+
+        </div>
+        
+    </section>
+
+    
+    <script src='javascript.js'></script>
+</body>
+</html>
